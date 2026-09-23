@@ -19,10 +19,24 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "EDITION_REGISTERED",
         "EDITION_RELEASED",
+        "EDITION_RETIRED",
+        "PRINT_BATCH_REGISTERED",
+        "UNIT_REGISTERED",
+        "LAW_REGISTERED",
+        "LAW_BASIS_ATTACHED",
+        "SCHOOL_REGISTERED",
+        "ADOPTION_STARTED",
+        "ADOPTION_SWITCHED",
         "ISSUE_REPORTED",
-        "CORRECTION_APPROVED",
-        "ADOPTION_FROZEN",
+        "CORRECTION_DECIDED",
+        "CORRECTION_INCLUDED",
+        "FREEZE_IMPOSED",
+        "FREEZE_ACK_LAYER",
+        "DECISION_REVIEW_PENDING",
+        "CONTENT_TAUGHT",
+        "PREP_REFERENCED",
         "NOTICE_ACKNOWLEDGED"
       ]
     },
@@ -31,8 +45,13 @@
       "enum": [
         "textbook_edition",
         "content_unit",
+        "regulation",
         "correction_notice",
-        "course_adoption"
+        "course_adoption",
+        "freeze_acknowledgement",
+        "school",
+        "teaching_record",
+        "teacher_prep_reference"
       ]
     },
     "aggregate_id": {
