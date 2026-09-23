@@ -20,10 +20,19 @@
       "type": "string",
       "enum": [
         "EDITION_RELEASED",
+        "CONTENT_UNIT_REGISTERED",
+        "CONTENT_REFERENCE_RECORDED",
+        "LEGAL_BASIS_REGISTERED",
+        "ADOPTION_RECORDED",
+        "ADOPTION_SWITCH_REQUESTED",
+        "ADOPTION_SWITCHED",
         "ISSUE_REPORTED",
         "CORRECTION_APPROVED",
         "ADOPTION_FROZEN",
-        "NOTICE_ACKNOWLEDGED"
+        "NOTICE_ACKNOWLEDGED",
+        "TEACHING_FACT_RECORDED",
+        "REMINDER_SCHEDULED",
+        "REMINDER_DELIVERED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +41,11 @@
         "textbook_edition",
         "content_unit",
         "correction_notice",
-        "course_adoption"
+        "course_adoption",
+        "legal_basis",
+        "textbook_issue",
+        "reminder",
+        "teaching_fact"
       ]
     },
     "aggregate_id": {
